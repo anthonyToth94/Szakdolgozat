@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8178D1A6-021D-4398-957A-7C007DFC9FB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SzakdolgozatApp</RootNamespace>
+    <AssemblyName>SzakdolgozatApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formok\Beallitasok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formok\Beallitasok.Designer.cs">
+      <DependentUpon>Beallitasok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formok\AdatokMegadasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formok\AdatokMegadasa.Designer.cs">
+      <DependentUpon>AdatokMegadasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formok\Jovedelem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formok\Jovedelem.Designer.cs">
+      <DependentUpon>Jovedelem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formok\SqlCeCommand.cs" />
+    <Compile Include="Formok\Timespan.cs" />
+    <Compile Include="KezeloFelulet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KezeloFelulet.Designer.cs">
+      <DependentUpon>KezeloFelulet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formok\Profilom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formok\Profilom.Designer.cs">
+      <DependentUpon>Profilom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formok\Munkaim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formok\Munkaim.Designer.cs">
+      <DependentUpon>Munkaim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formok\MunkaKereses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formok\MunkaKereses.Designer.cs">
+      <DependentUpon>MunkaKereses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formok\MunkaFeltoltes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formok\MunkaFeltoltes.Designer.cs">
+      <DependentUpon>MunkaFeltoltes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Munkak.cs" />
+    <Compile Include="MySqlConnection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regisztracio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisztracio.Designer.cs">
+      <DependentUpon>Regisztracio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sqlcommand.cs" />
+    <EmbeddedResource Include="Formok\Beallitasok.resx">
+      <DependentUpon>Beallitasok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formok\AdatokMegadasa.resx">
+      <DependentUpon>AdatokMegadasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formok\MunkaFeltoltes.resx">
+      <DependentUpon>MunkaFeltoltes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formok\Munkaim.resx">
+      <DependentUpon>Munkaim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formok\Jovedelem.resx">
+      <DependentUpon>Jovedelem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formok\MunkaKereses.resx">
+      <DependentUpon>MunkaKereses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KezeloFelulet.resx">
+      <DependentUpon>KezeloFelulet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formok\Profilom.resx">
+      <DependentUpon>Profilom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Regisztracio.resx">
+      <DependentUpon>Regisztracio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
